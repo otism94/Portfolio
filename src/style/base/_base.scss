@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-stack;
+    color: $text-primary;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}

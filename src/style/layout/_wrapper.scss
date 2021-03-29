@@ -1,0 +1,11 @@
+#wrapper {
+    display: flex;
+
+    nav {
+        order: 1;
+    }
+
+    main {
+        order: 2;
+    }
+}

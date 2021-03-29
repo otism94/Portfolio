@@ -1,0 +1,28 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "My portfolio for the Netmatters SCS course",
+  "main": "dist/js/main.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/otism94/Portfolio.git"
+  },
+  "author": "Otis Moorman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/otism94/Portfolio/issues"
+  },
+  "homepage": "https://github.com/otism94/Portfolio#readme",
+  "devDependencies": {
+    "@babel/core": "^7.13.13",
+    "@babel/plugin-external-helpers": "^7.12.13",
+    "@babel/preset-env": "^7.13.12",
+    "@rollup/plugin-babel": "^5.3.0",
+    "rollup": "^2.43.1",
+    "rollup-plugin-terser": "^7.0.2"
+  },
+  "dependencies": {}
+}
