@@ -1,3 +1,10 @@
+// Media query breakpoints map
+$breakpoints: (
+    'sm': 767px,
+    'md': 768px,
+    'lg': 1024px
+);
+
 // Fonts
 $font-stack: 'Poppins', 'Helvetica', 'Arial', sans-serif;
 

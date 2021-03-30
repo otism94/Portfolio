@@ -1,4 +1,38 @@
 header {
-    background-color: $theme-blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url('../img/pexels-anni-roenkae-2693212.jpg') no-repeat center;
+    background-size: cover;
     color: $white;
+    height: 100vh;
+
+    #header {
+        display: flex;
+        flex-direction: column;
+        flex: 1 0 auto;
+        justify-content: center;
+
+        &--tagline {
+            font-size: 26px;
+            display: block;
+            text-align: center;
+        }
+    }
+
+    #scroll-down {
+        display: block;
+        text-align: center;
+        
+        margin: 10px 0;
+
+        span {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .fa-chevron-down {
+            font-size: 24px;
+        }
+    }
 }

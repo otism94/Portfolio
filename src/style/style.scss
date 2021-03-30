@@ -1,5 +1,6 @@
 // Utilities
-@import 'utilities/variables';
+@import 'utilities/variables',
+        'utilities/mixins';
 
 // Base Styles   
 @import 'base/reset',
@@ -10,4 +11,6 @@
 
 // Layout Styles
 @import 'layout/wrapper',
-        'layout/header';
+        'layout/header',
+        'layout/project_grid',
+        'layout/contact';

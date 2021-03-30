@@ -1,0 +1,79 @@
+#contact {
+    &--content {
+        display: flex;
+        width: 90%;
+        margin: auto;
+    }
+
+    &--info {
+        flex-basis: 400px;
+        min-width: 400px;
+        padding-right: 20px;
+        margin-right: 20px;
+
+        h2 {
+            font-size: 36px;
+        }
+
+        li:first-child {
+            font-size: 26px;
+        }
+
+        li:last-child {
+            font-size: 20px;
+        }
+    }
+
+    &--form {
+        width: 100%;
+        margin-top: 32px;
+
+        table {
+            width: 100%;
+
+            td {
+                padding: 5px;
+            }
+
+            input, textarea {
+                width: 100%;
+                padding: 10px;
+                border: none;
+                border-radius: 5px;
+                background-color: $bg-input;
+
+                &:focus {
+                    outline: none;
+                    background-color: lighten($color: $bg-input, $amount: 5%);
+                    box-shadow: 0 0 5px $theme-blue;
+                }
+            }
+
+            input {
+                height: 45px;
+            }
+
+            textarea {
+                height: 212px;
+            }
+        }
+
+        button {
+            width: 184px;
+            height: 57px;
+            border: 2px solid $text-primary;
+            border-radius: 5px;
+            margin: 5px 0 0 8px;
+            background-color: $white;
+            color: $text-primary;
+            font-size: 17px;
+            font-weight: 600;
+
+            &:hover {
+                cursor: pointer;
+                background-color: $text-primary;
+                color: $white;
+            }
+        }
+    }
+}

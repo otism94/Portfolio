@@ -4,7 +4,8 @@
   "description": "My portfolio for the Netmatters SCS course",
   "main": "dist/js/main.min.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rollup --config",
+    "watch": "rollup --config --watch"
   },
   "repository": {
     "type": "git",
