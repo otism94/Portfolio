@@ -1,26 +1,50 @@
 #contact {
     &--content {
         display: flex;
+        flex-wrap: wrap;
         width: 90%;
         margin: auto;
+
+        @include mq('md') {
+            flex-wrap: nowrap;
+        }
     }
 
     &--info {
-        flex-basis: 400px;
-        min-width: 400px;
-        padding-right: 20px;
+        max-width: 100%;
+        padding: 0;
         margin-right: 20px;
+
+        @include mq('md') {
+            flex-basis: 400px;
+            min-width: 400px;
+            padding-right: 20px;
+        }
 
         h2 {
             font-size: 36px;
         }
 
-        li:first-child {
-            font-size: 26px;
-        }
+        li {
+            padding: 5px 0;
 
-        li:last-child {
-            font-size: 20px;
+            span {
+                border-bottom: 2px solid transparent;
+                transition: .5s;
+            }
+
+            &:first-child {
+                margin-top: 20px;
+                font-size: 26px;
+            }
+    
+            &:last-child {
+                font-size: 20px;
+            }
+
+            &:hover span {
+                border-bottom: 2px solid $theme-blue;
+            }
         }
     }
 
@@ -44,8 +68,8 @@
 
                 &:focus {
                     outline: none;
-                    background-color: lighten($color: $bg-input, $amount: 5%);
-                    box-shadow: 0 0 5px $theme-blue;
+                    background-color: lighten($bg-input, 5%);
+                    box-shadow: 0 0 15px $theme-blue;
                 }
             }
 
@@ -58,21 +82,38 @@
             }
         }
 
+        
+    }
+
+    &--submit-status {
+        display: flex;
+
         button {
-            width: 184px;
+            flex: 0 0 184px;
             height: 57px;
-            border: 2px solid $text-primary;
+            border: 2px solid $white;
             border-radius: 5px;
             margin: 5px 0 0 8px;
-            background-color: $white;
-            color: $text-primary;
+            background-color: $bg-body;
+            color: $white;
             font-size: 17px;
             font-weight: 600;
+            transition: all .5s;
 
             &:hover {
+                background-color: $white;
+                color: $bg-body;
                 cursor: pointer;
-                background-color: $text-primary;
-                color: $white;
+            }
+        }
+
+        #contact-status {
+            margin: 5px 20px 0;
+            color: red;
+            font-size: 12px;
+
+            @include mq('sm') {
+                font-size: 16px;
             }
         }
     }

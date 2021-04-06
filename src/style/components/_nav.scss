@@ -1,6 +1,6 @@
 nav {
-    border-right: 3px solid $theme-blue;
     min-height: 100vh;
+    border-right: 3px solid $theme-blue;
 
     #nav--initial {
         display: flex;
@@ -9,14 +9,23 @@ nav {
         border-bottom: 3px solid $theme-blue;
 
         span {
-            text-align: center;
-            font-size: 106px;
+            position: relative;
+            margin: 15px 0 0;
             color: $theme-blue;
+            font-size: 106px;
             font-weight: 600;
-            margin: 10px 0;
+            text-align: center;
+        }
 
-            &:hover {
-                cursor: default;
+        sup {
+            position: absolute;
+            left: 34px;
+            top: 54px;
+            font-size: 31px;
+
+            @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+                top: 55px;
+                font-size: 36px;
             }
         }
     }
@@ -25,30 +34,43 @@ nav {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin: 30px 0 0;
         font-weight: 600;
-        margin-top: 30px;
 
         li {
-            display: inline-block;
-            padding: 8px 0;
-            margin: 10px;
-            border-bottom: 2px solid transparent;
+            display: block;
+            width: 100%;
+            margin: 20px 0;
+            text-align: center;
 
-            &:hover {
-                cursor: pointer;
+            a {
+                display: block;
+                width: 100%;
+
+                span {
+                    padding: 8px 0;
+                    border-bottom: 2px solid transparent;
+                    transition: .5s;
+                }
+            }
+
+            &:hover a span {
                 border-bottom: 2px solid $theme-blue;
             }
 
             &:last-child {
-                display: block;
-                width: 100%;
-                text-align: center;
-                font-weight: 700;
+                padding: 0;
                 border-top: 2px solid $theme-blue;
                 border-bottom: 2px solid $theme-blue;
+                margin-top: 30px;
+                font-weight: 700;
+                transition: .5s;
+
+                a {
+                    padding: 10px 0;
+                }
 
                 &:hover {
-                    color: $white;
                     background-color: $theme-blue;
                 }
             }
@@ -59,7 +81,16 @@ nav {
         display: flex;
         justify-content: space-around;
         margin: 0 10px;
-        font-size: 20px;
         color: $theme-blue;
+        font-size: 20px;
+
+        i {
+            padding: 10px;
+            
+            &:hover {
+                color: $white;
+                transition: .5s;
+            }
+        }
     }
 }

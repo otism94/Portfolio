@@ -1,0 +1,59 @@
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    margin-bottom: 90px;
+    background-size: cover;
+    color: $white;
+    text-shadow: 2px 2px 5px $bg-body;
+
+    #header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 1 0 auto;
+
+        &--tagline {
+            display: block;
+            font-size: 26px;
+            text-align: center;
+            
+        }
+    }
+
+    #scroll-down {
+        display: block;
+        margin: 10px 0;
+        text-align: center;
+
+        span {
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .fa-chevron-down {
+            font-size: 24px;
+        }
+
+        &:hover {
+            cursor: default;
+        }
+    }
+}
+
+#header-home {
+    background: url('../img/header/mr-karl-Ggyw16U_JeY-unsplash.jpg') no-repeat center;
+}
+
+#header-about {
+    background: url('../img/header/mr-karl-sl8D3aGA1iw-unsplash.jpg') no-repeat center;
+}
+
+#header-coding {
+    margin-bottom: 0;
+}
+
+#header-scs {
+    background: url('../img/header/mr-karl-LsaEZ3Woqd4-unsplash.jpg') no-repeat center;
+}

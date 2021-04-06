@@ -1,17 +1,19 @@
 // Media query breakpoints map
 $breakpoints: (
-    'sm': 767px,
-    'md': 768px,
-    'lg': 1024px
+    'xs': 767px,
+    'sm': 768px,
+    'md': 1024px,
+    'lg': 1281px,
+    'xl': 1921px
 );
 
 // Fonts
-$font-stack: 'Poppins', 'Helvetica', 'Arial', sans-serif;
+$font-stack: 'Comfortaa', 'Helvetica', 'Arial', sans-serif;
 
 // Colours
-$white: #fff;
-$text-primary: #252c46;
+$white: #dddddd;
 $text-highlight: #a9abb2;
-$text-input: #8b8c8c;
-$theme-blue: #53b2cb;
+$theme-blue: #21569b;
+$bg-body: #1b1e22;
+$bg-nav: #16171a;
 $bg-input: #dadbdd;

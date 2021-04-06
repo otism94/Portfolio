@@ -3,15 +3,38 @@
 }
 
 body {
+    color: $white;
     font-family: $font-stack;
-    color: $text-primary;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 h1 {
     margin: 10px 0;
-    text-align: center;
-    font-size: 64px;
     font-weight: 600;
+    text-align: center;
+    text-shadow: 2px 2px 5px $bg-body;
+
+    @include mq('xs') {
+        font-size: 56px;
+    }
+
+    @include mq('sm') {
+        font-size: 72px;
+    }
+
+    @include mq('md') {
+        font-size: 56px;
+    }
+
+    @include mq('lg') {
+        font-size: 64px;
+    }
+}
+
+p {
+    padding-bottom: 5px;
+    line-height: 1.8em;
 }
 
 a {

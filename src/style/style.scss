@@ -7,10 +7,14 @@
         'base/base';
 
 // Component Styles
-@import 'components/nav';
+@import 'components/header',
+        'components/nav';
 
 // Layout Styles
 @import 'layout/wrapper',
-        'layout/header',
         'layout/project_grid',
-        'layout/contact';
+        'layout/contact',
+        'layout/success',
+        'layout/about',
+        'layout/coding',
+        'layout/scs';
