@@ -45,9 +45,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $mail->Subject = $subject;
             $mail->Body = $message;
         
-            $mail->send();
-            header("Location: success.php");
-            exit;
+            $result = $mail->send();
+            if ($result) {
+                header('Location: success.php');
+            } else {
+                $error_message = 'Message failed to send. Please try again.';
+            }
+            
         } catch (Exception $e) {
             $error_message = "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
         }
