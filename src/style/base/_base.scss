@@ -34,7 +34,12 @@ h1 {
 
 p {
     padding-bottom: 5px;
+    font-size: 20px;
     line-height: 1.8em;
+
+    @include mq('xl') {
+        font-size: 24px;
+    }
 }
 
 a {

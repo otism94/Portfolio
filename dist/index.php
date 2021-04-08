@@ -27,14 +27,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (!isset($error_message)) {
         try {
             // Server settings
-            // $mail->SMTPDebug = SMTP::DEBUG_SERVER;
+            $mail->SMTPDebug = SMTP::DEBUG_SERVER;
             $mail->isSMTP();
-            $mail->Host = $smtp_host;
             $mail->SMTPAuth = true;
+            $mail->Host = $smtp_host;
             $mail->Username = $smtp_user;
             $mail->Password = $smtp_pass;
-            $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Port = $smtp_port;
+            $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             
             // Recipients
             $mail->setFrom($email, "$first_name $last_name");
@@ -49,9 +49,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             if ($result) {
                 header('Location: success.php');
             } else {
-                $error_message = 'Message failed to send. Please try again.';
+                $error_message = "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
             }
-            
         } catch (Exception $e) {
             $error_message = "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
         }
@@ -67,10 +66,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <span id="header--tagline">I'm a Web Developer</span>
             </div>
             
-            <div id="scroll-down">
+            <a href="#projects" id="scroll-down">
                 <span>Scroll Down</span><br/>
                 <i class="fas fa-chevron-down"></i>
-            </div>
+            </a>
         </header>
 
         <section id="projects">

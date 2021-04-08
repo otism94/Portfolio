@@ -79,13 +79,13 @@ nav {
 
     #nav--social {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         margin: 0 10px;
         color: $theme-blue;
         font-size: 20px;
 
         i {
-            padding: 10px;
+            padding: 10px 25px;
             
             &:hover {
                 color: $white;

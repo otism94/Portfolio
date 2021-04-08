@@ -1,6 +1,5 @@
 #projects {
     width: 100%;
-    margin-bottom: 50px;
 
     &--content {
         display: flex;
@@ -9,25 +8,46 @@
         max-width: 90%;
         margin: auto;
 
+        @include mq('lg') {
+            width: 80%;
+        }
+
         .project {
-            max-width: 415px;
             margin-bottom: 50px;
 
             &--img {
                 display: flex;
-                justify-content: center;
+                flex-direction: column;
+                justify-content: flex-start;
                 overflow: hidden;
-                max-width: 100%;
+                width: 100%;
                 border-radius: 5px;
                 box-shadow: 0 0 0 rgba(0, 0, 0, 0);
                 transition: box-shadow .5s;
 
                 img {
-                    height: 100%;
+                    flex-shrink: 0;
+                    width: 100%;
                     opacity: 1;
                     transform-origin: top;
                     transition: all .5s;
                 }
+            }
+
+            @include mq('xs') {
+                width: 100%;
+            }
+
+            @include mq('sm') {
+                width: 48%;
+
+                .project--img {
+                    max-height: 300px;
+                }
+            }
+
+            @include mq('lg') {
+                width: 32%;
             }
 
             h2 {
@@ -57,42 +77,7 @@
                 }
             }
 
-            @include mq('xs') {
-                width: 100%;
-                max-width: 100%;
-
-                .project--img img {
-                    width: 100%;
-                }
-            }
-
-            @include mq('sm') {
-                width: 48%;
-
-                .project--img img {
-                    width: 100%;
-                }
-            }
-
-            @include mq('md') {
-                .project--img img {
-                    width: initial;
-                    height: 300px;
-                }
-            }
-
-            @include mq('lg') {
-                width: 32%;
-            }
-
-            @include mq('xl') {
-                max-width: 500px;
-
-                .project--img img {
-                    width: 100%;
-                    height: initial;
-                }
-            }
+            
         }
     }
 }

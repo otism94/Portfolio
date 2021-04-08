@@ -2,7 +2,6 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100vh;
     margin-bottom: 90px;
     background-size: cover;
     color: $white;
@@ -35,25 +34,27 @@ header {
         .fa-chevron-down {
             font-size: 24px;
         }
-
-        &:hover {
-            cursor: default;
-        }
     }
 }
 
 #header-home {
+    height: 100vh;
     background: url('../img/header/mr-karl-Ggyw16U_JeY-unsplash.jpg') no-repeat center;
 }
 
 #header-about {
+    height: 139px;
+    border-bottom: 3px solid $theme-blue;
     background: url('../img/header/mr-karl-sl8D3aGA1iw-unsplash.jpg') no-repeat center;
 }
 
 #header-coding {
+    height: 100vh;
     margin-bottom: 0;
 }
 
 #header-scs {
+    height: 139px;
+    border-bottom: 3px solid $theme-blue;
     background: url('../img/header/mr-karl-LsaEZ3Woqd4-unsplash.jpg') no-repeat center;
 }
