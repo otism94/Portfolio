@@ -62,7 +62,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <main>
         <header id="header-home">
             <div id="header">
-                <h1>My Name is Otis Moorman</h1>
+                <h1 id="typewriter"><span id="cursor">|</span></h1>
                 <span id="header--tagline">I'm a Web Developer</span>
             </div>
             
@@ -146,5 +146,4 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <?php require 'inc/nav.php'; ?>
 
 </div>
-
 <?php require 'inc/footer.php'; ?>

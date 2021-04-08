@@ -1,17 +1,17 @@
-import { babel } from '@rollup/plugin-babel'
+import { getBabelOutputPlugin } from '@rollup/plugin-babel'
 import { terser } from 'rollup-plugin-terser'
 
-export default {
-    input: './src/js/main.js',
-    output: {
-        file: './dist/js/main.min.js',
-        format: 'iife',
-        plugins: [
-            babel({
-                babelHelpers: 'bundled',
-                exclude: 'node_modules/**',
-            }),
-            terser(),
-        ],
-    }
+const config = {
+    input: './src/js/app.js',
+    plugins: [
+        getBabelOutputPlugin({
+            presets: ['@babel/preset-env']
+        }),
+        terser()
+    ],
+    output: [
+        { file: './dist/js/app.min.js', format: 'esm' }
+    ]
 }
+
+export default config
