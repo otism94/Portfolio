@@ -1,10 +1,12 @@
 <?php
 $page_title = 'SCS Scheme - Otis Moorman';
 require 'inc/head.php';
+require 'inc/nav.php';
 ?>
 
-<div id="scs" class="wrapper">
+<div id="container" class="scs">
     <main>
+        <?php require 'inc/menu-btn.php'; ?>
         <header id="header-scs">
             <div id="header">
                 <h1>SCS Scheme</h1>
@@ -59,9 +61,6 @@ require 'inc/head.php';
             <span>Back to Top</span>
         </a>
     </main>
-
-    <?php require 'inc/nav.php'; ?>
-
 </div>
 
 <?php require 'inc/footer.php'; ?>

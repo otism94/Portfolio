@@ -1,4 +1,4 @@
-.wrapper {
+#container {
     display: flex;
     height: 100vh;
     max-height: 100vh;
@@ -9,13 +9,10 @@
         flex: 0 0 200px;
         max-height: 100%;
         background-color: $bg-nav;
-        
-        @include mq('xs') {
-            display: none;
-        }
     }
 
     main {
+        position: relative;
         order: 2;
         overflow-y: auto;
         width: 100%;

@@ -1,10 +1,12 @@
 <?php
 $page_title = 'About Me - Otis Moorman';
 require 'inc/head.php';
+require 'inc/nav.php';
 ?>
 
-<div id="about" class="wrapper">
+<div id="container" class="about">
     <main>
+        <?php require 'inc/menu-btn.php'; ?>
         <header id="header-about">
             <div id="header"> 
                 <h1>About Me</h1>
@@ -35,9 +37,6 @@ require 'inc/head.php';
             <span>Back to Top</span>
         </a>
     </main>
-
-    <?php require 'inc/nav.php'; ?>
-
 </div>
 
 <?php require 'inc/footer.php'; ?>

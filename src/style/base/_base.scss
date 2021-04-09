@@ -3,6 +3,8 @@
 }
 
 body {
+    overflow-x: hidden;
+    background-color: $bg-nav;
     color: $white;
     font-family: $font-stack;
     -webkit-font-smoothing: antialiased;

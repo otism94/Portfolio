@@ -56,10 +56,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         }
     }
 }
+
+require 'inc/nav.php';
 ?>
 
-<div id="homepage" class="wrapper">
+<div id="container" class="homepage">
     <main>
+        <?php require 'inc/menu-btn.php'; ?>
         <header id="header-home">
             <div id="header">
                 <h1 id="typewriter"><span id="cursor">|</span></h1>
@@ -142,8 +145,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <span>Back to Top</span>
         </a>
     </main>
-
-    <?php require 'inc/nav.php'; ?>
-
 </div>
+
 <?php require 'inc/footer.php'; ?>

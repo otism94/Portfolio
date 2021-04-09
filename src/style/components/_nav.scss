@@ -81,11 +81,11 @@ nav {
         display: flex;
         justify-content: center;
         margin: 0 10px;
-        color: $theme-blue;
-        font-size: 20px;
 
-        i {
+        a {
             padding: 10px 25px;
+            color: $theme-blue;
+            font-size: 20px;
             
             &:hover {
                 color: $white;
@@ -93,4 +93,13 @@ nav {
             }
         }
     }
+}
+
+.site-overlay:hover {
+    cursor: pointer;
+} 
+
+// Override Pushy styles
+.pushy a {
+    padding: 0;
 }
