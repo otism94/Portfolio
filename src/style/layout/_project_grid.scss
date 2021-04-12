@@ -1,5 +1,6 @@
 #projects {
     width: 100%;
+    margin-bottom: 40px;
 
     &--content {
         display: flex;
@@ -52,6 +53,10 @@
 
             h2 {
                 font-size: 28px;
+            }
+
+            p {
+                font-size: 18px;
             }
 
             &--view {

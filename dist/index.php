@@ -82,11 +82,12 @@ require 'inc/nav.php';
                 if (is_object($projects->projects[0])) {
                     foreach ($projects->projects as $project) {
                         echo
-                            '<a href="' . $project->repo . '" target="_blank" id="projects--p' . $project->id . '" class="project">
+                            '<a href="' . $project->url . '" target="_blank" id="projects--p' . $project->id . '" class="project">
                                 <div class="project--img">
-                                    <img src="' . $project->img_file . '"/>
+                                    <img src="img/projects/' . $project->img . '"/>
                                 </div> 
                                 <h2>' . $project->title . '</h2>
+                                <p>' . $project->description . '</p>
                                 <span class="project--view">View Project</span><i class="fas fa-arrow-right"></i>
                             </a>';
                     }

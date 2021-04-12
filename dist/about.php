@@ -27,7 +27,7 @@ require 'inc/nav.php';
                     <img src="img/about/me2.jpg" alt="Me with a camera near České Budějovice"/>
                 </div>
                 <div id="about-me--contact">
-                    <span>If you'd like to get in touch, please use the <a href="index.php#contact">contact form</a> and I'll be sure to get back to you.</span>
+                    <span><strong>If you'd like to get in touch, please use the <a href="index.php#contact">contact form</a> and I'll be sure to get back to you.</strong></span>
                 </div>
             </div>
         </section>
