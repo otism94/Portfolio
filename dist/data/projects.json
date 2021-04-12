@@ -5,21 +5,21 @@
             "title": "HTML/CSS Reflection",
             "img": "project-netmatters.jpg",
             "description": "My first major assignment in the SCS was to recreate the Netmatters website as pixel-perfect as possible using all the HTML and CSS knowledge I had gained thus far. Later in the course, I was tasked to revisit this project and add JavaScript functionality.",
-            "url": "https://netmatters.otis-moorman.netmatters-scs.com"
+            "url": "https://netmatters.otis-moorman.netmatters-scs.co.uk"
         },
         {
             "id": "2",
             "title": "Pair Project",
             "img": "project-pairs.jpg",
             "description": "I was paired up with another student on the course and given a website design to create from scratch. This was my first experience collaborating on a web project, as well as creating a consistent site-wide design from a single page concept.",
-            "url": "https://pairs.otis-moorman.netmatters-scs.com"
+            "url": "https://pairs.otis-moorman.netmatters-scs.co.uk"
         },
         {
             "id": "3",
             "title": "JavaScript Reflection",
             "img": "project-imgat.jpg",
             "description": "This was my first project where I had a lot of freedom and could design a site with JavaScript in mind from the start. I was tasked with implementing an API that would load a random image which the user could then assign to a validated email address.",
-            "url": "https://imgat.otis-moorman.netmatters-scs.com"
+            "url": "https://imgat.otis-moorman.netmatters-scs.co.uk"
         }
     ]
 }
