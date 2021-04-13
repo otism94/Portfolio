@@ -10,7 +10,7 @@ echo
                 <li><a href="about.php"><span>About Me</span></a></li>
                 <li><a href="index.php#projects" class="pushy-link"><span>My Portfolio</span></a></li>
                 <li><a href="coding.php"><span>Coding Examples</span></a></li>
-                <li><a href="scs.php"><span>SCS Scheme</a></li>
+                <li><a href="scs.php"><span>SCS Scheme</span></a></li>
                 <li><a href="index.php#contact" class="pushy-link">Contact Me</a></li>
             </ul>
 

@@ -14,6 +14,8 @@
         }
 
         .project {
+            display: flex;
+            flex-direction: column;
             margin-bottom: 50px;
 
             &--img {
@@ -52,6 +54,7 @@
             }
 
             h2 {
+                margin-bottom: 0;
                 font-size: 28px;
             }
 
@@ -60,14 +63,19 @@
             }
 
             &--view {
-                font-size: 16px;
+                margin-top: auto;
 
+                span {
+                    font-size: 16px;
+                }
+
+                i {
+                    margin-left: 10px;
+                    font-size: 14px;
+                }
             }
 
-            i {
-                margin-left: 10px;
-                font-size: 14px;
-            }
+            
 
             &:hover {
                 color: $text-highlight;

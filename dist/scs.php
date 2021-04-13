@@ -16,12 +16,7 @@ require 'inc/nav.php';
         <section id="scs-info">
             <div id="scs-info--content">
                 <h2>Introduction to the Scion Coalition Scheme</h2>
-                <div id="scs-info--subcontent">
-                    <div id="scs-info--img">
-                        <img src="img/scs/scions-coalition-scheme-kSmx.jpg" alt="Scions at work"/>
-                    </div>
-                    <p>The Scion Coalition Scheme is an intensive, specially tailored training program run by Netmatters in order to give willing candidates the opportunity to enter the industry as web developers. Under the supervision of senior web developers, scions generally aim to complete training within six to nine months. The course is intensive and therefore the level of learning achieved is extensive in a short space of time.</p>
-                </div>
+                <p>The Scion Coalition Scheme is an intensive, specially tailored training program run by Netmatters in order to give willing candidates the opportunity to enter the industry as web developers. Under the supervision of senior web developers, scions generally aim to complete training within six to nine months. The course is intensive and therefore the level of learning achieved is extensive in a short space of time.</p>
             </div>
         </section>
 

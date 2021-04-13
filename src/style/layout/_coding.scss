@@ -1,7 +1,92 @@
-#coding main {
-    padding: 0;
+#examples {
+    width: 100%;
 
-    #header-coding i {
-        color: $theme-blue;
+    &--content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 90%;
+        margin: 0 auto 40px;
+
+        @include mq('lg') {
+            width: 80%;
+        }
+
+        & > div:first-child {
+            border-bottom: 3px solid $theme-blue;
+            margin-bottom: 20px;
+
+            @include mq('xl') {
+                border-bottom: none;
+                border-right: 3px solid $theme-blue;
+                margin-bottom: 0;
+            }
+            
+        }
     }
+
+    &--js, &--sass {
+        width: 100%;
+        padding: 0 20px 20px;
+
+        @include mq('xl') {
+            width: 50%;
+        }
+    }
+
+    .show-desc {
+        display: flex;
+        align-items: center;
+        width: 90%;
+        padding: 20px 20px;
+        margin: auto;
+        background-color: $bg-nav;
+        transition: all .5s;
+
+        h3 {
+            display: inline-block;
+            margin: 0 0 0 20px;
+        }
+
+        i {
+            transform: rotate(0deg);
+            transform-origin: center;
+            transition: transform .5s;
+        }
+
+        &:hover {
+            background-color: $theme-blue;
+            cursor: pointer;
+        }
+    }
+
+    .examples-desc {
+        width: 80%;
+        margin: auto;
+    }
+
+    pre {
+        display: flex;
+        justify-content: center;
+        width: min-content;
+        max-width: 100%;
+        border-radius: 5px;
+        margin: 16px auto;
+        background-color: $bg-nav;
+        overflow-x: auto;
+    }
+
+    .code-block {
+        align-self: center;
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    code {
+        display: inline-block;
+        padding: 0 10px;
+        border-radius: 5px;
+        background-color: $bg-nav;
+    }
+    
 }

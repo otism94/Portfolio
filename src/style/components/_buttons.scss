@@ -38,3 +38,27 @@
         outline: none;
     }
 }
+
+button, .btn-examples {
+    height: 57px;
+    border: 2px solid $white;
+    border-radius: 5px;
+    background-color: $bg-body;
+    color: $white;
+    font-size: 17px;
+    font-weight: 600;
+    transition: all .5s;
+
+    &:hover {
+        background-color: $white;
+        color: $bg-body;
+        cursor: pointer;
+    }
+}
+
+.btn-examples {
+    display: inline-flex;
+    align-items: center;
+    padding: 0 20px;
+    margin: 20px 0 20px 5%;
+}

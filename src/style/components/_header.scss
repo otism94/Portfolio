@@ -61,8 +61,9 @@ header {
 }
 
 #header-coding {
-    height: 100vh;
-    margin-bottom: 0;
+    height: 139px;
+    border-bottom: 3px solid $theme-blue;
+    background: url('../img/header/mr-karl-nlhPiks-6BY-unsplash.jpg') no-repeat center;
 }
 
 #header-scs {

@@ -88,7 +88,9 @@ require 'inc/nav.php';
                                 </div> 
                                 <h2>' . $project->title . '</h2>
                                 <p>' . $project->description . '</p>
-                                <span class="project--view">View Project</span><i class="fas fa-arrow-right"></i>
+                                <div class="project--view">
+                                    <span>View Project</span><i class="fas fa-arrow-right"></i>
+                                </div>
                             </a>';
                     }
                 }
