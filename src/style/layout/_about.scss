@@ -16,6 +16,8 @@
         width: 100%;
         padding: 15px 35px;
         border: 3px solid $theme-blue;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
         margin: 0 auto;
         background-color: $bg-body;
         text-align: center;
@@ -43,7 +45,7 @@
             border-left: 3px solid $theme-blue;
 
             @include mq('md') {
-                order: initial;
+                order: 0;
                 width: 60%;
                 border: none;
             }
@@ -54,15 +56,18 @@
             display: flex;
             justify-content: center;
             align-items: flex-start;
+            flex-shrink: 0;
             padding: 30px 0;
             border-right: 3px solid $theme-blue;
             border-bottom: 3px solid $theme-blue;
+            border-bottom-right-radius: 20px;
 
             @include mq('md') {
-                order: initial;
+                order: 0;
                 width: 40%;
                 padding: 40px 0 0;
                 border: none;
+                border-bottom-right-radius: 0;
             }
 
             img {
@@ -75,14 +80,17 @@
                 }
 
                 @include mq('sm') {
+                    width: 80%;
                     max-width: 80%;
                 }
 
                 @include mq('md') {
+                    width: 70%;
                     max-width: 70%;
                 }
 
                 @include mq('lg') {
+                    width: 60%;
                     max-width: 60%;
                 }
             }
@@ -96,11 +104,12 @@
 
         h3 {
             display: inline-block;
-            padding: 5px 5px 2px 20px;
+            padding: 5px 10px 2px 20px;
             border-bottom: 2px solid $theme-blue;
-            border-bottom-left-radius: 5px;
+            border-left: 2px solid $theme-blue;
+            border-bottom-left-radius: 10px;
             margin-bottom: 10px;
-            margin-left: -20px;
+            margin-left: -22px;
             font-size: 20px;
         }
 
@@ -115,12 +124,18 @@
             &:last-child {
                 margin-bottom: 15px;
             }
+
+            ul li {
+                padding-left: 15px;
+            }
         }
     }
 
     &--contact {
         padding: 15px;
         border: 3px solid $theme-blue;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
         margin: auto;
 
         span {

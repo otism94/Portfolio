@@ -8,7 +8,7 @@
         width: 90%;
         margin: 0 auto 40px;
 
-        @include mq('lg') {
+        @include mq('xl') {
             width: 80%;
         }
 
@@ -16,7 +16,7 @@
             border-bottom: 3px solid $theme-blue;
             margin-bottom: 20px;
 
-            @include mq('xl') {
+            @include mq('lg') {
                 border-bottom: none;
                 border-right: 3px solid $theme-blue;
                 margin-bottom: 0;
@@ -29,7 +29,7 @@
         width: 100%;
         padding: 0 20px 20px;
 
-        @include mq('xl') {
+        @include mq('lg') {
             width: 50%;
         }
     }
@@ -42,6 +42,10 @@
         margin: auto;
         background-color: $bg-nav;
         transition: all .5s;
+
+        @include mq('xs') {
+            width: 100%;
+        }
 
         h3 {
             display: inline-block;
@@ -63,6 +67,10 @@
     .examples-desc {
         width: 80%;
         margin: auto;
+
+        @include mq('xs') {
+            width: 90%;
+        }
     }
 
     pre {
@@ -70,7 +78,8 @@
         justify-content: center;
         width: min-content;
         max-width: 100%;
-        border-radius: 5px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
         margin: 16px auto;
         background-color: $bg-nav;
         overflow-x: auto;
@@ -85,7 +94,8 @@
     code {
         display: inline-block;
         padding: 0 10px;
-        border-radius: 5px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
         background-color: $bg-nav;
     }
     

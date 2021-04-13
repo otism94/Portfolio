@@ -39,10 +39,12 @@
     }
 }
 
-button, .btn-examples {
+button,
+.btn-examples {
     height: 57px;
     border: 2px solid $white;
-    border-radius: 5px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
     background-color: $bg-body;
     color: $white;
     font-size: 17px;
