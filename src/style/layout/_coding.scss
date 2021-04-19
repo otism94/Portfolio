@@ -25,7 +25,8 @@
         }
     }
 
-    &--js, &--sass {
+    &--js,
+    &--sass {
         width: 100%;
         padding: 0 20px 20px;
 
@@ -41,7 +42,7 @@
         padding: 20px 20px;
         margin: auto;
         background-color: $bg-nav;
-        transition: all .5s;
+        transition: background-color .5s;
 
         @include mq('xs') {
             width: 100%;
@@ -78,11 +79,10 @@
         justify-content: center;
         width: min-content;
         max-width: 100%;
-        border-top-right-radius: 20px;
-        border-bottom-left-radius: 20px;
         margin: 16px auto;
         background-color: $bg-nav;
         overflow-x: auto;
+        @include radius-style;
     }
 
     .code-block {
@@ -94,9 +94,8 @@
     code {
         display: inline-block;
         padding: 0 10px;
-        border-top-right-radius: 20px;
-        border-bottom-left-radius: 20px;
         background-color: $bg-nav;
+        @include radius-style;
     }
     
 }

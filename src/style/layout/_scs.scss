@@ -61,14 +61,14 @@
         width: 100%;
         padding: 0 20px 20px;
         margin-bottom: 40px;
-        border-top-right-radius: 20px;
-        border-bottom-left-radius: 20px;
         background-color: $bg-nav;
         box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+        @include radius-style;
 
         @include mq('md') {
             width: 48%;
             padding: 0 40px 20px;
+            margin-bottom: 0;
         }
     }
 
@@ -81,6 +81,7 @@
         margin: 20px;
 
         img {
+            flex-shrink: 0;
             max-width: 100%;
             max-height: 100%;
         }

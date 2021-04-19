@@ -32,11 +32,14 @@ const typewriter = () => {
 
         // Check if full string *has* been typed
         if (i == txt.length) {
-            // Repeat every 1200ms
+            // Fade in the tagline
+            $('#header--tagline').animate({opacity: 1}, 1000)
+
+            // Blinking cursor interval - repeats every 1200ms
             setInterval(() => {
-                // Set colour to transparent
+                // Set cursor colour to transparent
                 $cursor.css('color', 'transparent')
-                // Set colour to white after 600ms
+                // Set cursor colour to white after 600ms
                 setTimeout(() => $cursor.css('color', '#ddd'), 600)
             }, 1200)
         }

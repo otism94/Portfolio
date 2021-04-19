@@ -24,10 +24,9 @@
                 justify-content: flex-start;
                 overflow: hidden;
                 width: 100%;
-                border-top-right-radius: 20px;
-                border-bottom-left-radius: 20px;
                 box-shadow: 0 0 0 rgba(0, 0, 0, 0);
                 transition: box-shadow .5s;
+                @include radius-style;
 
                 img {
                     flex-shrink: 0;

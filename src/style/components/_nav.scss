@@ -63,12 +63,11 @@ nav {
                 width: calc(100% + 4px);
                 padding: 0;
                 border: 2px solid $theme-blue;
-                border-top-right-radius: 10px;
-                border-bottom-left-radius: 10px;
                 margin-top: 30px;
                 margin-left: -1px;
                 font-weight: 700;
                 transition: .5s;
+                @include radius-style(10px);
 
                 a {
                     padding: 10px 0;
@@ -104,6 +103,10 @@ nav {
 } 
 
 // Override Pushy styles
-.pushy a {
-    padding: 0;
+.pushy {
+    overflow-x: hidden;
+    
+    a {
+        padding: 0;
+    }
 }

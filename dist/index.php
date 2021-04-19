@@ -15,19 +15,19 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $message = trim(filter_input(INPUT_POST, 'message', FILTER_SANITIZE_STRING));
 
     if ($first_name == '' || $last_name == '' || $email == '') {
-        $error_message = 'Please fill in all required fields (*)';
+        $error_message = 'Please fill in all required fields (*).';
     }
 
     $mail = new PHPMailer;
 
     if (!isset($error_message) && !$mail->validateAddress($email)) {
-        $error_message = 'Invalid email address';
+        $error_message = 'Invalid email address.';
     }
 
     if (!isset($error_message)) {
         try {
             // Server settings
-            $mail->SMTPDebug = SMTP::DEBUG_SERVER;
+            /* $mail->SMTPDebug = SMTP::DEBUG_SERVER; */
             $mail->isSMTP();
             $mail->SMTPAuth = true;
             $mail->Host = $smtp_host;
@@ -49,10 +49,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             if ($result) {
                 header('Location: success.php');
             } else {
-                $error_message = "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+                $error_message = "Message could not be sent.";
             }
         } catch (Exception $e) {
-            $error_message = "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+            $error_message = "Message could not be sent.";
         }
     }
 }
