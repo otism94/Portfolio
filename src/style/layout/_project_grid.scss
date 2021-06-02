@@ -1,5 +1,6 @@
 #projects {
     width: 100%;
+    margin-bottom: 40px;
 
     &--content {
         display: flex;
@@ -13,6 +14,8 @@
         }
 
         .project {
+            display: flex;
+            flex-direction: column;
             margin-bottom: 50px;
 
             &--img {
@@ -21,9 +24,9 @@
                 justify-content: flex-start;
                 overflow: hidden;
                 width: 100%;
-                border-radius: 5px;
                 box-shadow: 0 0 0 rgba(0, 0, 0, 0);
                 transition: box-shadow .5s;
+                @include radius-style;
 
                 img {
                     flex-shrink: 0;
@@ -51,18 +54,28 @@
             }
 
             h2 {
+                margin-bottom: 0;
                 font-size: 28px;
             }
 
+            p {
+                font-size: 18px;
+            }
+
             &--view {
-                font-size: 16px;
+                margin-top: auto;
 
+                span {
+                    font-size: 16px;
+                }
+
+                i {
+                    margin-left: 10px;
+                    font-size: 14px;
+                }
             }
 
-            i {
-                margin-left: 10px;
-                font-size: 14px;
-            }
+            
 
             &:hover {
                 color: $text-highlight;

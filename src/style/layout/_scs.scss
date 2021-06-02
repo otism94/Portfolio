@@ -10,51 +10,43 @@
             width: 80%;
         }
     }
-
-    h2 {
-        font-size: 32px;
-    }
 }
 
 #scs-info--content {
+    width: 90%;
     margin-bottom: 40px;
 
-    #scs-info--subcontent {
+    h2 {
+        padding-bottom: 10px;
+        border-bottom: 3px solid $theme-blue;
+    }
+
+    @include mq('md') {
         display: flex;
-        flex-direction: column;
         justify-content: space-between;
 
-        @include mq('lg') {
-            flex-direction: row;
+        h2 {
+            width: 40%;
+            padding: 0 20px 0 0;
+            border-bottom: none;
         }
 
         p {
-            width: 100%;
+            width: 60%;
+            padding-left: 20px;
+            border-left: 3px solid $theme-blue;
+        }
+    }
 
-            @include mq('lg') {
-                width: 48%;
-                margin-top: 12px;
-            }
+    @include mq('lg') {
+        width: 80%;
+
+        h2 {
+            padding-right: 30px;
         }
 
-        #scs-info--img {
-            align-self: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 90%;
-            height: 100%;
-            
-            @include mq('lg') {
-                align-self: flex-start;
-                width: 48%;
-                margin: 20px 0;
-            }
-
-            img {
-                width: 90%;
-                border-radius: 5px;
-            }
+        p {
+            padding-left: 30px;
         }
     }
 }
@@ -64,17 +56,19 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-    #treehouse, #netmatters {
+    #treehouse,
+    #netmatters {
         width: 100%;
         padding: 0 20px 20px;
         margin-bottom: 40px;
-        border-radius: 5px;
         background-color: $bg-nav;
         box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+        @include radius-style;
 
         @include mq('md') {
             width: 48%;
             padding: 0 40px 20px;
+            margin-bottom: 0;
         }
     }
 
@@ -87,12 +81,14 @@
         margin: 20px;
 
         img {
+            flex-shrink: 0;
             max-width: 100%;
             max-height: 100%;
         }
     }
 
-    p, li {
+    p,
+    li {
         font-size: 18px;
         line-height: 1.8em;
 
@@ -100,9 +96,17 @@
             font-size: 16px;
         }
 
+        @include mq('lg') {
+            font-size: 18px;
+        }
+
         @include mq('xl') {
             font-size: 20px;
         }
+    }
+
+    .treehouse-score {
+        color: $treehouse-green;
     }
 
     a {
@@ -115,6 +119,6 @@
     }
 
     #netmatters ul {
-        list-style: outside;
+        list-style: inside;
     }
 }

@@ -1,10 +1,12 @@
 <?php
 $page_title = 'About Me - Otis Moorman';
 require 'inc/head.php';
+require 'inc/nav.php';
 ?>
 
-<div id="about" class="wrapper">
+<div id="container" class="about">
     <main>
+        <?php require 'inc/menu-btn.php'; ?>
         <header id="header-about">
             <div id="header"> 
                 <h1>About Me</h1>
@@ -13,19 +15,47 @@ require 'inc/head.php';
 
         <section id="about-me">
             <div id="about-me--content">
+                <h2>Hey, I'm Otis.</h2>
                 <div id="about-me--description">
-                    <h2>Hi, I'm Otis.</h2>
-                    <p>I'm a web developer in training, based in Norwich. I joined the <a href="scs.php">Scion Coalition Scheme</a> in December 2020.</p>
-                    <p>I've been interested in programming from a young age, having run a custom modded server for a Java game when I was 12. I first started learning to code with Python in A-Level Computing, where I achieved an A grade. After that, I attened the University of Surrey and earnt a Certificate of Higher Education in Film Studies, and also studied abroad at the FAMU film school in Prague under the Erasmus exchange scheme. I was planning on returning to university to study computer science when I stumbled upon the SCS Scheme, and was fortunate enough to get accepted - and here I am today.</p>
-                    <p>So far, I'm comfortable with HTML, CSS/Sass, and JavaScript/jQuery, and I've recently started learning PHP and SQL. As I progress through the course, I'll also be getting into C#, WordPress, and React, as well as receiving additional UI/UX design training. My goal is primarily centred around becoming a front-end developer, though I could go full-stack depending on how I get on with C#.</p>
-                    <p>Outside of work, I'm also developing two games with friends in Unity (which is part of the reason I'll be learning C#), where I'm doing general game design, music, and UI. Game development is a massive personal passion of mine, and it's a big part of why I've been so enthusiastic about my training. Additionally, I've got a couple of web projects planned for when I've learnt WordPress.</p>
+                    <div class="about-me--text">
+                        <p>I'm a web developer in training based in Norwich. I joined the <a href="scs.php">Scion Coalition Scheme</a> in December 2020.</p>
+                        <p>I'm confident in HTML, CSS/Sass, JavaScript, SQL and PHP. I've started learning C# and will soon be moving on to Unity and graphic design, with a focus on UI/UX.</p>
+                        <p>In my spare time, I develop video games with friends. I provide the music, writing, and system/scenario design.</p>
+                    </div>
+                    <div class="about-me--img">
+                        <img src="img/about/me.jpg" alt="Me in front of a wall"/>
+                    </div>
                 </div>
-                <div id="about-me--img">
-                    <img src="img/about/me.jpg" alt="Me in front of a wall"/>
-                    <img src="img/about/me2.jpg" alt="Me with a camera near České Budějovice"/>
+                <h2>Selected Work & Education</h2>
+                <div id="about-me--work">
+                    <div class="about-me--img">
+                        <img src="img/about/me2.jpg" alt="Me with a camera near České Budějovice"/>
+                    </div>
+                    <div class="about-me--text">
+                        <ul>
+                            <li><h3>Freelance Filmmaker</h3>
+                                <ul>
+                                    <li>2013-16</li>
+                                    <li><em>Featured in Pitchfork, the Guardian, Q, and NME</em></li>
+                                </ul>
+                            </li>
+                            <li><h3>University of Surrey</h3>
+                                <ul>
+                                    <li>2012-17</li>
+                                    <li><em>Certificate of Higher Education in Film Studies (Merit)</em></li>
+                                </ul>
+                            </li>
+                            <li><h3>FAMU Prague</h3>
+                                <ul>
+                                    <li>2014-15</li>
+                                    <li><em>Erasmus+ Programme</em></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div id="about-me--contact">
-                    <span>If you'd like to get in touch, please use the <a href="index.php#contact">contact form</a> and I'll be sure to get back to you.</span>
+                    <span><strong>If you'd like to get in touch, please use the <a href="index.php#contact">contact form</a> and I'll be sure to get back to you.</strong></span>
                 </div>
             </div>
         </section>
@@ -35,9 +65,6 @@ require 'inc/head.php';
             <span>Back to Top</span>
         </a>
     </main>
-
-    <?php require 'inc/nav.php'; ?>
-
 </div>
 
 <?php require 'inc/footer.php'; ?>

@@ -2,7 +2,6 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 90px;
     background-size: cover;
     color: $white;
     text-shadow: 2px 2px 5px $bg-body;
@@ -17,7 +16,21 @@ header {
             display: block;
             font-size: 26px;
             text-align: center;
+            opacity: 0;
             
+        }
+    }
+
+    #typewriter {
+        display: inline-block;
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+
+        #cursor {
+            font-family: 'Times New Roman';
+            font-size: 1.2em;
+            text-shadow: none;
         }
     }
 
@@ -49,8 +62,9 @@ header {
 }
 
 #header-coding {
-    height: 100vh;
-    margin-bottom: 0;
+    height: 139px;
+    border-bottom: 3px solid $theme-blue;
+    background: url('../img/header/mr-karl-nlhPiks-6BY-unsplash.jpg') no-repeat center;
 }
 
 #header-scs {

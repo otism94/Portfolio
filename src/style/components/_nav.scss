@@ -1,6 +1,7 @@
 nav {
     min-height: 100vh;
     border-right: 3px solid $theme-blue;
+    overflow-x: hidden;
 
     #nav--initial {
         display: flex;
@@ -59,12 +60,14 @@ nav {
             }
 
             &:last-child {
+                width: calc(100% + 4px);
                 padding: 0;
-                border-top: 2px solid $theme-blue;
-                border-bottom: 2px solid $theme-blue;
+                border: 2px solid $theme-blue;
                 margin-top: 30px;
+                margin-left: -1px;
                 font-weight: 700;
                 transition: .5s;
+                @include radius-style(10px);
 
                 a {
                     padding: 10px 0;
@@ -81,16 +84,29 @@ nav {
         display: flex;
         justify-content: center;
         margin: 0 10px;
-        color: $theme-blue;
-        font-size: 20px;
 
-        i {
+        a {
             padding: 10px 25px;
+            color: $theme-blue;
+            font-size: 20px;
             
             &:hover {
                 color: $white;
                 transition: .5s;
             }
         }
+    }
+}
+
+.site-overlay:hover {
+    cursor: pointer;
+} 
+
+// Override Pushy styles
+.pushy {
+    overflow-x: hidden;
+    
+    a {
+        padding: 0;
     }
 }

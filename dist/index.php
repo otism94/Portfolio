@@ -15,19 +15,19 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $message = trim(filter_input(INPUT_POST, 'message', FILTER_SANITIZE_STRING));
 
     if ($first_name == '' || $last_name == '' || $email == '') {
-        $error_message = 'Please fill in all required fields (*)';
+        $error_message = 'Please fill in all required fields (*).';
     }
 
     $mail = new PHPMailer;
 
     if (!isset($error_message) && !$mail->validateAddress($email)) {
-        $error_message = 'Invalid email address';
+        $error_message = 'Invalid email address.';
     }
 
     if (!isset($error_message)) {
         try {
             // Server settings
-            $mail->SMTPDebug = SMTP::DEBUG_SERVER;
+            /* $mail->SMTPDebug = SMTP::DEBUG_SERVER; */
             $mail->isSMTP();
             $mail->SMTPAuth = true;
             $mail->Host = $smtp_host;
@@ -49,20 +49,23 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             if ($result) {
                 header('Location: success.php');
             } else {
-                $error_message = "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+                $error_message = "Message could not be sent.";
             }
         } catch (Exception $e) {
-            $error_message = "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+            $error_message = "Message could not be sent.";
         }
     }
 }
+
+require 'inc/nav.php';
 ?>
 
-<div id="homepage" class="wrapper">
+<div id="container" class="homepage">
     <main>
+        <?php require 'inc/menu-btn.php'; ?>
         <header id="header-home">
             <div id="header">
-                <h1>My Name is Otis Moorman</h1>
+                <h1 id="typewriter"><span id="cursor">|</span></h1>
                 <span id="header--tagline">I'm a Web Developer</span>
             </div>
             
@@ -79,12 +82,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 if (is_object($projects->projects[0])) {
                     foreach ($projects->projects as $project) {
                         echo
-                            '<a href="' . $project->repo . '" target="_blank" id="projects--p' . $project->id . '" class="project">
+                            '<a href="' . $project->url . '" target="_blank" id="projects--p' . $project->id . '" class="project">
                                 <div class="project--img">
-                                    <img src="' . $project->img_file . '"/>
+                                    <img src="img/projects/' . $project->img . '"/>
                                 </div> 
                                 <h2>' . $project->title . '</h2>
-                                <span class="project--view">View Project</span><i class="fas fa-arrow-right"></i>
+                                <p>' . $project->description . '</p>
+                                <div class="project--view">
+                                    <span>View Project</span><i class="fas fa-arrow-right"></i>
+                                </div>
                             </a>';
                     }
                 }
@@ -142,9 +148,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <span>Back to Top</span>
         </a>
     </main>
-
-    <?php require 'inc/nav.php'; ?>
-
 </div>
 
 <?php require 'inc/footer.php'; ?>

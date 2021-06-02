@@ -1,4 +1,4 @@
-.wrapper {
+#container {
     display: flex;
     height: 100vh;
     max-height: 100vh;
@@ -9,22 +9,20 @@
         flex: 0 0 200px;
         max-height: 100%;
         background-color: $bg-nav;
-        
-        @include mq('xs') {
-            display: none;
-        }
     }
 
     main {
+        position: relative;
         order: 2;
         overflow-y: auto;
         width: 100%;
         max-height: 100%;
         background-color: $bg-body;
+        scroll-behavior: smooth;
 
         #scroll-up {
             display: block;
-            margin: 50px 0 20px;
+            margin: 70px 0;
             text-align: center;
             text-shadow: 2px 2px 5px $bg-body;
     
