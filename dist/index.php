@@ -1,4 +1,6 @@
 <?php
+ob_start();
+
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
@@ -152,4 +154,7 @@ require 'inc/nav.php';
     </main>
 </div>
 
-<?php require 'inc/footer.php'; ?>
+<?php 
+require 'inc/footer.php'; 
+ob_end_flush();
+?>
