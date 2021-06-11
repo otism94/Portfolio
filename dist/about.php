@@ -18,9 +18,10 @@ require 'inc/nav.php';
                 <h2>Hey, I'm Otis.</h2>
                 <div id="about-me--description">
                     <div class="about-me--text">
-                        <p>I'm a web developer in training based in Norwich. I joined the <a href="scs.php">Scion Coalition Scheme</a> in December 2020.</p>
-                        <p>I'm confident in HTML, CSS/Sass, JavaScript, SQL and PHP. I've started learning C# and will soon be moving on to Unity and graphic design, with a focus on UI/UX.</p>
-                        <p>In my spare time, I develop video games with friends. I provide the music, writing, and system/scenario design.</p>
+                        <p>I'm a web developer in training based in Norwich. I started modding games from a young age, and since then I've held a lifelong interest in programming, taking AS-level Computing in college (for which I got an A grade) and eventually joining the <a href="scs.php">Scion Coalition Scheme</a> in December 2020.</p>
+                        <p>I studied film at the Univserity of Surrey, and took a year abroad at the prestigious FAMU film school in Prague under the Erasmus exchange scheme. I was also commissioned to make several music videos for a local band, which were well-received and featured in several high-profile publications. As a result of this background, I've got a good eye for visuals in web design, and am aiming to round out my development skills with back-end knowledge.</p>
+                        <p>I'm confident in HTML, CSS/Sass, JavaScript, SQL and PHP. I've recently started learning C# and will soon be adding Unity and graphic design to my repertoire as well, with a focus on UI/UX.</p>
+                        <p>In my spare time, I'm usually making music and developing (and playing) video games. I'm currently working on two games with my friends in Unity, for which I provide the music, writing, and systems/scenario design. Thanks to my SCS training, I'll soon be able to help with the programming too, which I'm very exited about!</p>
                     </div>
                     <div class="about-me--img">
                         <img src="img/about/me.jpg" alt="Me in front of a wall"/>

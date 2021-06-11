@@ -2,8 +2,9 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
-require 'vendor/autoload.php';
-require 'data/smtpdata.php';
+
+require 'inc/bootstrap.php';
+
 $page_title = 'Home - Otis Moorman';
 require 'inc/head.php';
 
@@ -29,16 +30,17 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             // Server settings
             /* $mail->SMTPDebug = SMTP::DEBUG_SERVER; */
             $mail->isSMTP();
-            $mail->SMTPAuth = true;
-            $mail->Host = $smtp_host;
-            $mail->Username = $smtp_user;
-            $mail->Password = $smtp_pass;
-            $mail->Port = $smtp_port;
+            $mail->SMTPAuth = $_ENV["SMTP_AUTH"];
+            $mail->Host = $_ENV["SMTP_HOST"];
+            $mail->Username = $_ENV["SMTP_USER"];
+            $mail->Password = $_ENV["SMTP_PASS"];
+            $mail->Port = $_ENV["SMTP_PORT"];
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             
             // Recipients
-            $mail->setFrom($email, "$first_name $last_name");
-            $mail->addAddress('otis.moorman@hotmail.com', 'Otis Moorman');
+            $mail->setFrom($_ENV["SMTP_FROM"], "$first_name $last_name");
+            $mail->addAddress($_ENV["MAILTO_EMAIL"], $_ENV["MAILTO_NAME"]);
+            $mail->addReplyTo($email, "$first_name $last_name");
         
             // Content
             $mail->isHTML(true);
