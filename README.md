@@ -3,6 +3,7 @@ My portfolio website for the Netmatters SCS course.
 
 ## Dependencies
 - PHPMailer
+- PHPDotEnv
 
 ## Dev Dependencies
 Details in `package.json`.
