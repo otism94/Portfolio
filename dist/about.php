@@ -14,11 +14,15 @@ require 'inc/head.php';
         <section id="about-me">
             <div id="about-me--content">
                 <div id="about-me--description">
-                    <h2>Hi, I'm Otis.</h2>
-                    <p>I'm a web developer in training, based in Norwich. I joined the <a href="scs.php">Scion Coalition Scheme</a> in December 2020.</p>
-                    <p>I've been interested in programming from a young age, having run a custom modded server for a Java game when I was 12. I first started learning to code with Python in A-Level Computing, where I achieved an A grade. After that, I attened the University of Surrey and earnt a Certificate of Higher Education in Film Studies, and also studied abroad at the FAMU film school in Prague under the Erasmus exchange scheme. I was planning on returning to university to study computer science when I stumbled upon the SCS Scheme, and was fortunate enough to get accepted - and here I am today.</p>
-                    <p>So far, I'm comfortable with HTML, CSS/Sass, and JavaScript/jQuery, and I've recently started learning PHP and SQL. As I progress through the course, I'll also be getting into C#, WordPress, and React, as well as receiving additional UI/UX design training. My goal is primarily centred around becoming a front-end developer, though I could go full-stack depending on how I get on with C#.</p>
-                    <p>Outside of work, I'm also developing two games with friends in Unity (which is part of the reason I'll be learning C#), where I'm doing general game design, music, and UI. Game development is a massive personal passion of mine, and it's a big part of why I've been so enthusiastic about my training. Additionally, I've got a couple of web projects planned for when I've learnt WordPress.</p>
+                    <div class="about-me--text">
+                        <p>I'm a web developer in training based in Norwich. I started modding games from a young age, and since then I've held a lifelong interest in programming, taking AS-level Computing in college (for which I got an A grade) and eventually joining the <a href="scs.php">Scion Coalition Scheme</a> in December 2020.</p>
+                        <p>I studied film at the Univserity of Surrey, and took a year abroad at the prestigious FAMU film school in Prague under the Erasmus exchange scheme. I was also commissioned to make a few music videos for a local band, which were well-received and featured in several high-profile publications. As a result of this background, I've got a good eye for visuals in web design, though I've also managed to get plenty of back-end training during my time on the course.</p>
+                        <p>I'm confident in HTML, CSS/Sass, JavaScript, SQL, PHP, WordPress, C# with ASP.NET MVC and Entity Framework, as well as Unity. I've also done design work in Figma and Axure, and over the years have learnt my way around various Adobe products like Photoshop, Illustrator, and Premiere Pro.</p>
+                        <p>In my spare time, I'm usually making music and developing (and playing) video games. I'm currently working on a game with my friends in Unity, for which I provide the music, writing, and systems/scenario design. Thanks to my SCS training, I've recently been able to take a much more active role in the programming as well - which is keeping me very busy!</p>
+                    </div>
+                    <div class="about-me--img">
+                        <img src="img/about/me.png" alt="Me in front of a wall"/>
+                    </div>
                 </div>
                 <div id="about-me--img">
                     <img src="img/about/me.jpg" alt="Me in front of a wall"/>
