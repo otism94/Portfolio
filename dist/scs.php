@@ -1,10 +1,12 @@
 <?php
 $page_title = 'SCS Scheme - Otis Moorman';
 require 'inc/head.php';
+require 'inc/nav.php';
 ?>
 
-<div id="scs" class="wrapper">
+<div id="container" class="scs">
     <main>
+        <?php require 'inc/menu-btn.php'; ?>
         <header id="header-scs">
             <div id="header">
                 <h1>SCS Scheme</h1>
@@ -14,12 +16,7 @@ require 'inc/head.php';
         <section id="scs-info">
             <div id="scs-info--content">
                 <h2>Introduction to the Scion Coalition Scheme</h2>
-                <div id="scs-info--subcontent">
-                    <div id="scs-info--img">
-                        <img src="img/scs/scions-coalition-scheme-kSmx.jpg" alt="Scions at work"/>
-                    </div>
-                    <p>The Scion Coalition Scheme is an intensive, specially tailored training program run by Netmatters in order to give willing candidates the opportunity to enter the industry as web developers. Under the supervision of senior web developers, scions generally aim to complete training within six to nine months. The course is intensive and therefore the level of learning achieved is extensive in a short space of time.</p>
-                </div>
+                <p>The Scion Coalition Scheme is an intensive, specially tailored training program run by Netmatters in order to give willing candidates the opportunity to enter the industry as web developers. Under the supervision of senior web developers, scions generally aim to complete training within six to nine months. The course is intensive and therefore the level of learning achieved is extensive in a short space of time.</p>
             </div>
         </section>
 
@@ -59,9 +56,6 @@ require 'inc/head.php';
             <span>Back to Top</span>
         </a>
     </main>
-
-    <?php require 'inc/nav.php'; ?>
-
 </div>
 
 <?php require 'inc/footer.php'; ?>

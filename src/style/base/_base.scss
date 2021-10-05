@@ -2,33 +2,48 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
+    overflow: hidden;
+    background-color: $bg-nav;
     color: $white;
     font-family: $font-stack;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
+section:first-of-type {
+    padding-top: 90px;
+}
+
 h1 {
     margin: 10px 0;
+    font-size: 56px;
     font-weight: 600;
     text-align: center;
     text-shadow: 2px 2px 5px $bg-body;
 
     @include mq('xs') {
-        font-size: 56px;
-    }
-
-    @include mq('sm') {
-        font-size: 72px;
-    }
-
-    @include mq('md') {
-        font-size: 56px;
+        font-size: 52px;
     }
 
     @include mq('lg') {
         font-size: 64px;
+    }
+}
+
+h2 {
+    font-size: 32px;
+
+    @include mq('xs') {
+        font-size: 28px;
+    }
+
+    @include mq('lg') {
+        font-size: 36px;
     }
 }
 

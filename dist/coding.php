@@ -1,16 +1,17 @@
 <?php
 $page_title = 'Coding Examples - Otis Moorman';
 require 'inc/head.php';
+require 'inc/nav.php';
 ?>
 
-<div id="coding" class="wrapper">
+<div id="container" class="coding">
     <main>
+        <?php require 'inc/menu-btn.php'; ?>
         <header id="header-coding">
             <div id="header">
-                <h1>Coming Soon <i class="fas fa-wrench"></i></h1>
+                <h1>Coding Examples</h1>
             </div>
         </header>
-    </main>
 
         <section id="examples">
             <div id="examples--content">
@@ -195,6 +196,11 @@ ORDER BY "Rating" DESC;</code>
             </div>
         </section>
 
+        <a href="#header" id="scroll-up">
+            <i class="fas fa-chevron-up"></i><br/>
+            <span>Back to Top</span>
+        </a>
+    </main>
 </div>
 
 <?php require 'inc/footer.php'; ?>

@@ -1,0 +1,66 @@
+button,
+.btn-examples {
+    height: 57px;
+    border: 2px solid $white;
+    background-color: $bg-body;
+    color: $white;
+    font-size: 17px;
+    font-weight: 600;
+    transition: all .5s;
+    @include radius-style(10px);
+
+    &:hover {
+        background-color: $white;
+        color: $bg-body;
+        cursor: pointer;
+    }
+}
+
+.btn-examples {
+    display: inline-flex;
+    align-items: center;
+    padding: 0 20px;
+    margin: 20px 0 20px 5%;
+}
+
+.menu-btn {
+    position: fixed;
+    z-index: 1000;
+    bottom: 10px;
+    left: 10px;
+    display: none;
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 2px 2px 10px $bg-nav;
+    background-color: $theme-blue;
+    opacity: .7;
+    transition: opacity .5s;
+
+    @include mq('xs') {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &--line {
+        display: inline-block;
+        width: 35px;
+        height: 4px;
+        border-radius: 5px;
+        margin: 3px 0;
+        background-color: $white;
+    }
+
+    &:hover {
+        background-color: $theme-blue;
+        cursor: pointer;
+        opacity: 1;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
