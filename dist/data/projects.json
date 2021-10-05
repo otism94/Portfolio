@@ -2,45 +2,52 @@
     "projects": [
         {
             "id": "1",
-            "title": "HTML/CSS Reflection",
-            "img_file": "img/projects/project-1.jpg",
-            "description": "My first major assignment under the Scion Coalition Scheme was to recreate the pre-existing Netmatters website using all the HTML and CSS knowledge I had gained up to that point, as pixel-perfect as possible using the mobile-first approach. Later in the course, I was tasked to revisit this project and add JavaScript functionality to the site, including an image carousel, dynamic sticky header, sidebar navigation, and a cookies pop-up window, plus smaller bits of JS throughout the page, such as a toggleable search bar. While doing this, I also practised organising my workflow using Gulp to maintain separate source and distribution builds, which required the utilisation of npm packages.",
-            "repo": "https://github.com/otism94/js-reflection-challenge-1"
+            "title": "Netmatters recreation",
+            "img": "project-netmatters.jpg",
+            "description": "My first major assignment in the SCS was to recreate the Netmatters website using all the HTML and CSS knowledge I had gained thus far. I iterated upon this project twice in the course: first adding JavaScript features, then later converting it to PHP complete with database functionality.",
+            "url": "http://netmatters.otis-moorman.netmatters-scs.co.uk"
         },
         {
             "id": "2",
-            "title": "Pair Project",
-            "img_file": "img/projects/project-2.jpg",
-            "description": "I was paired up with another student on the course and given a website design to create from scratch. This was my first experience with collaboration on a web project and as such required extra organisation and frequent check-ups with my partner to make sure we were on-track. As we only had a prototype for the homepage, for the rest of the site, it was up to us to carry that design over and make sure everything was visually cohesive.",
-            "repo": "https://github.com/Tomby07/Pair-Project"
+            "title": "Terracotta Catering",
+            "img": "project-pairs.jpg",
+            "description": "I was paired up with another student on the course and given a website design to create from scratch. This was my first experience collaborating on a web project, as well as creating a consistent site-wide design from a single page concept.",
+            "url": "http://pairs.otis-moorman.netmatters-scs.co.uk"
         },
         {
             "id": "3",
-            "title": "JavaScript Reflection",
-            "img_file": "img/projects/project-3.jpg",
-            "description": "This was my first project where I had a lot of freedom and could design a site with JavaScript in mind from the start. I was tasked with implementing an API that would load a random image which the user could then assign to a validated email address. The site kept track of all the linked images and emails in that session, all done entirely with JavaScript. This was my first foray into external requests, for which I used Axios for comprehensive browser support. Additionally, I put a lot of time into refining the UX and making the page fully adaptive.",
-            "repo": "https://github.com/otism94/js-reflection-challenge-2"
+            "title": "imgAt",
+            "img": "project-imgat.jpg",
+            "description": "This was my first project where I had a lot of freedom and could design a site with JavaScript in mind from the start. I was tasked with implementing an API that would load a random image which the user could then assign to a validated email address.",
+            "url": "http://imgat.otis-moorman.netmatters-scs.co.uk"
         },
         {
             "id": "4",
-            "title": "Placeholder",
-            "img_file": "img/projects/project-1.jpg",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-            "repo": "https://github.com/otism94/js-reflection-challenge-1"
+            "title": "WordPress Reflection",
+            "img": "project-wordpress.jpg",
+            "description": "Here I was tasked with create a site using WordPress. I created my own custom theme using the Underscores framework, and constructed the site with search engine optimisation in mind for the content, which consistently scored around 80/90 in Rank Math.",
+            "url": "http://wordpress.otis-moorman.netmatters-scs.co.uk"
         },
         {
             "id": "5",
-            "title": "Placeholder",
-            "img_file": "img/projects/project-1.jpg",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-            "repo": "https://github.com/otism94/js-reflection-challenge-1"
+            "title": "C# Reflection",
+            "img": "project-cs.png",
+            "description": "For C#, I had to make a small company/employees database using ASP.NET and Entity Framework Core. I had to set up a local SQL database with relational databases entirely in code, and incorporated CRUD functionality through an MVC pattern. This was my first time working on a full-fledged C# project, and really helped solidify my understanding of object-oriented programming.",
+            "url": "https://github.com/otism94/CS-Reflection-2"
         },
         {
             "id": "6",
-            "title": "Placeholder",
-            "img_file": "img/projects/project-1.jpg",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-            "repo": "https://github.com/otism94/js-reflection-challenge-1"
+            "title": "Firefly Events prototype",
+            "img": "project-figma.png",
+            "description": "I was given a brief to design a website for an events-hosting client. I used Figma to create both mobile and desktop prototypes, plus Adobe Illustrator to create several logos. When I was finished I had to give a presentation to walk through my design. This was my first big taste of web design work taking a client's wishes into account.",
+            "url": "https://www.figma.com/proto/TWxuQfUtx9RvHAskJebS6U/Firefly-Events?node-id=7%3A48&starting-point-node-id=7%3A48"
+        },
+        {
+            "id": "7",
+            "title": "RoShamBot",
+            "img": "project-unity.png",
+            "description": "This was my first ever solo Unity project that I designed and coded from scratch. It's a little rough around the edges, but it really helped me get comfortable with the Unity engine workflow, as well as serving as invaluable programming practice material due to its heavy use of C# and the free-form, problem-solving nature of game development.",
+            "url": "https://play.unity.com/mg/other/roshambot"
         }
     ]
 }

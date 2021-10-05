@@ -31,7 +31,7 @@ require 'inc/head.php';
                     </a>
                     <p>Treehouse is an online learning community, featuring videos covering a number of topics from basic HTML to C# programming, iOS development, data analysis, and more. By completing courses users can earn points, allowing them to track their progress and see how much they've covered in certain areas.</p>
                     <ul>
-                        <li><strong>Total Score:</strong> 18,281</li>
+                        <li><strong class="treehouse-score">Total Score:</strong> 25,283</li>
                         <li><a href="https://teamtreehouse.com/otism94" target="_blank">teamtreehouse.com/otism94</a></li>
                     </ul>
                 </div>
