@@ -24,7 +24,7 @@ require 'inc/nav.php';
                         <p>In my spare time, I'm usually making music and developing (and playing) video games. I'm currently working on a game with my friends in Unity, for which I provide the music, writing, and systems/scenario design. Thanks to my SCS training, I've recently been able to take a much more active role in the programming as well - which is keeping me very busy!</p>
                     </div>
                     <div class="about-me--img">
-                        <img src="img/about/me.png" alt="Me in front of a wall"/>
+                        <img src="img/about/me.jpg" alt="Me in front of a wall"/>
                     </div>
                 </div>
                 <h2>Selected Work & Education</h2>
