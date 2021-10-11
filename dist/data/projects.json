@@ -5,28 +5,28 @@
             "title": "Netmatters recreation",
             "img": "project-netmatters.jpg",
             "description": "My first major assignment in the SCS was to recreate the Netmatters website using all the HTML and CSS knowledge I had gained thus far. I iterated upon this project twice in the course: first adding JavaScript features, then later converting it to PHP complete with database functionality.",
-            "url": "http://netmatters.otis-moorman.netmatters-scs.co.uk"
+            "url": "https://netmatters.otis-moorman.netmatters-scs.co.uk"
         },
         {
             "id": "2",
             "title": "Terracotta Catering",
             "img": "project-pairs.jpg",
             "description": "I was paired up with another student on the course and given a website design to create from scratch. This was my first experience collaborating on a web project, as well as creating a consistent site-wide design from a single page concept.",
-            "url": "http://pairs.otis-moorman.netmatters-scs.co.uk"
+            "url": "https://pairs.otis-moorman.netmatters-scs.co.uk"
         },
         {
             "id": "3",
             "title": "imgAt",
             "img": "project-imgat.jpg",
             "description": "This was my first project where I had a lot of freedom and could design a site with JavaScript in mind from the start. I was tasked with implementing an API that would load a random image which the user could then assign to a validated email address.",
-            "url": "http://imgat.otis-moorman.netmatters-scs.co.uk"
+            "url": "https://imgat.otis-moorman.netmatters-scs.co.uk"
         },
         {
             "id": "4",
             "title": "WordPress Reflection",
             "img": "project-wordpress.jpg",
             "description": "Here I was tasked with create a site using WordPress. I created my own custom theme using the Underscores framework, and constructed the site with search engine optimisation in mind for the content, which consistently scored around 80/90 in Rank Math.",
-            "url": "http://wordpress.otis-moorman.netmatters-scs.co.uk"
+            "url": "https://wordpress.otis-moorman.netmatters-scs.co.uk"
         },
         {
             "id": "5",
@@ -48,6 +48,13 @@
             "img": "project-unity.png",
             "description": "This was my first ever solo Unity project that I designed and coded from scratch. It's a little rough around the edges, but it really helped me get comfortable with the Unity engine workflow, as well as serving as invaluable programming practice material due to its heavy use of C# and the free-form, problem-solving nature of game development.",
             "url": "https://play.unity.com/mg/other/roshambot"
+        },
+        {
+            "id": "8",
+            "title": "WooCommerce project",
+            "img": "project-woocommerce.jpg",
+            "description": "In this small project, I made a simple store with WordPress using the WooCommerce plugin. This gave me some familiarity with ecommerce interfaces as well as giving me more practice with WordPress itself.",
+            "url": "https://woocommerce.otis-moorman.netmatters-scs.co.uk"
         }
     ]
 }
